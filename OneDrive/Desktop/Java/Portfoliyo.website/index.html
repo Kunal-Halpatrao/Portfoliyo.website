@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kunal Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700& 
+display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #0f0e28;
+            color: #060700;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            /* height: 80px;
+            background-color: gray;  */
+        }
+
+        nav ul {
+            padding: 20px 0;
+            color: aliceblue;
+            display: flex;
+            justify-content: center;
+            cursor: pointer;
+            font-size: 18px;
+            padding-left: 750px;
+
+
+        }
+
+        nav ul li {
+            margin-right: 30px;
+            list-style: none;
+
+        }
+
+        nav ul li:hover {
+            border-bottom: 5px solid rgb(204, 210, 205);
+            bottom: -6px;
+            transition: 0.7s;
+            color: rgb(235, 74, 11);
+            font-size: 1.08rem;
+        }
+
+
+        nav ul li {
+            border-bottom: 5px solid transparent;
+        }
+
+        .left {
+            color: aliceblue;
+            cursor: pointer;
+            font-size: 1.5em;
+            font-weight: 600;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            margin: 130px 0;
+        }
+
+        .leftSection {
+            font-size: 3rem;
+            margin: 60px 0;
+            color: azure;
+            width: 100%;
+            height: 100%;
+
+        }
+
+        .rightSection {
+            width: 35px;
+            height: 70vh;
+        }
+
+        .firstSection>div {
+            width: 40%;
+        }
+
+        .rightSection img {
+            width: 120%;
+            height: 100%;
+        }
+
+        @keyframes purple {
+            0% {
+                text-shadow: 0 0 5px rgb(68, 134, 163), 0 0 10px rgb(59, 119, 131), 0 0 20px rgb(75, 169, 188);
+            }
+
+            50% {
+                text-shadow: 0 0 20px rgb(75, 169, 188), 0 0 40px rgb(75, 169, 188), 0 0 60px rgb(74, 139, 182);
+            }
+
+            100% {
+                text-shadow: 0 0 5px rgb(84, 172, 172), 0 0 10px rgb(75, 169, 188), 0 0 20px rgb(95, 193, 204);
+            }
+        }
+
+        .purple {
+            color: rgb(84, 135, 164);
+            animation: glow 2s infinite alternate;
+        }
+
+        #element {
+            color: rgb(173, 55, 224);
+        }
+
+        @keyframes glow {
+            0% {
+                text-shadow: 0 0 5px rgb(75, 169, 188), 0 0 10px rgb(75, 169, 188), 0 0 20px rgb(75, 169, 188);
+            }
+
+            50% {
+                text-shadow: 0 0 20px rgb(75, 169, 188), 0 0 40px rgb(160, 65, 151), 0 0 60px rgb(75, 169, 188);
+            }
+
+            100% {
+                text-shadow: 0 0 5px rgb(75, 169, 188), 0 0 10px rgb(189, 24, 134), 0 0 20px rgb(75, 169, 188);
+            }
+        }
+
+        .glow {
+            font-size: 2rem;
+            font-weight: bold;
+            color: rgb(55, 219, 197);
+            text-align: center;
+            animation: glow 2s infinite alternate;
+            padding: 20px;
+            position: absolute;
+            top: 5px;
+            left: 20px;
+            text-align: left;
+            cursor: pointer;
+        }
+
+        .secondSection {
+            max-width: 80vw;
+            margin: auto;
+            color: rgb(0, 0, 0);
+            padding-bottom: 20px;
+            height: 110vh;
+        }
+
+        main hr {
+            border: 0;
+            background: #918eba;
+            height: 2.6px;
+        }
+
+
+        .secondSection h1 {
+            font-size: 1.9rem;
+        }
+
+        .text-gray {
+            color: gray;
+        }
+
+        .secondSection .box {
+            background: #918eba;
+            width: 80vw;
+            height: 2px;
+            margin: 56px 0;
+            display: flex;
+        }
+
+        .secondSection .vertical {
+            height: 93px;
+            width: 1px;
+            background-color: #918eba;
+            margin: 0 100px;
+        }
+
+        .image-top {
+            width: 33px;
+            position: relative;
+            top: -32px;
+            left: -9px;
+        }
+
+        .vertical-title {
+            position: relative;
+            top: 75px;
+            width: 150px;
+        }
+
+        .vertical-Desc {
+            position: relative;
+            top: 85px;
+            color: rgb(255, 253, 250);
+            width: 150px;
+            font-size: 9px;
+        }
+
+
+        @keyframes Toy {
+            0% {
+                text-shadow: 0 0 5px rgb(75, 169, 188), 0 0 10px rgb(75, 169, 188), 0 0 20px rgb(75, 169, 188);
+            }
+
+            50% {
+                text-shadow: 0 0 20px rgb(75, 169, 188), 0 0 40px blue, 0 0 60px rgb(75, 169, 188);
+            }
+
+            100% {
+                text-shadow: 0 0 5px rgb(75, 169, 188), 0 0 10px rgb(75, 169, 188), 0 0 20px rgb(75, 169, 188);
+            }
+        }
+
+        .Toy {
+            color: #918eba;
+            margin: 77px 190px;
+            animation: glow 2s infinite alternate;
+            font-weight: bold;
+            font-size: 2rem;
+            cursor: pointer;
+            border-radius: 2px;
+        }
+
+        .footer ul {
+            color: #918eba;
+            margin: 97px 290px;
+            font-weight: bold;
+        }
+
+        .h1 toy {
+            margin: 60px 550px;
+        }
+
+
+
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        nav ul li a:hover {
+            color: rgb(235, 74, 11);
+        }
+
+        .footer {
+            background-color: #23212d;
+            height: 625px;
+            display: flex;
+        }
+
+        .footer-first {
+            color: aqua;
+        }
+
+        .text-gray h1 {
+            color: #837fba;
+        }
+
+        .vertical-title {
+            background-color: #837fba;
+        }
+
+        .container {
+            color: #918eba;
+            margin-top: 150px;
+            margin-left: 750px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+
+        .footer {
+            position: relative;
+            padding: 20px;
+            background-color: #141234;
+        }
+
+        .toy-1 {
+            text-align: right;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .footer-first h3 {
+            color: #918eba;
+            font-weight: bold;
+        }
+
+        .Frame ul {
+            color: #a8a5d1;
+            font-weight: bold;
+            font-size: large;
+            font-size: 1.3em;
+        }
+
+        .Frame ul li a {
+            color: #a8a5d1;
+            font-weight: bold;
+            font-size: large;
+            font-size: 1.1em;
+        }
+
+        .Work h1 {
+            color: #a8a5d1;
+        }
+
+        .firstSection {
+            margin-left: 100px;
+            padding-bottom: 50px;
+            justify-content: left;
+        }
+
+        .purple {
+            font-weight: bold;
+        }
+
+        .secondSection {
+            margin-top: 30px;
+            padding-bottom: 2vh;
+        }
+
+        .footer hr {
+            background: #918eba;
+        }
+
+        .Toy h2 {
+            justify-content: right;
+            margin-left: 200px;
+        }
+
+        .thirdsection h2 {
+            color: #918eba;
+
+        }
+
+        .My {
+            color: #918eba;
+        }
+
+        .footer-first h3 {
+            margin-bottom: 100px;
+        }
+
+        .about-merged {
+            margin-top: 50px;
+            text-align: center;
+            color: #ccc;
+        }
+
+        .about-merged h2,
+        .about-merged h3 {
+            margin-bottom: 10px;
+        }
+
+        .about-merged span {
+            display: block;
+            font-size: 1rem;
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        .about-merged p {
+            color: #918eba;
+        }
+
+        .container {
+            justify-content: left;
+        }
+
+        .Me{
+            margin-right: 100%;
+        }
+
+
+        .Me h3 {
+            color: #918eba;
+
+        }
+
+        .Me p {
+            color: #918eba;
+
+
+        }
+
+        .container {
+            margin-right: 5px;
+            text-align: left;
+        }
+
+        .Me {
+            text-align: center;
+            justify-content: center;
+            margin-right: 1em;
+
+
+        }
+
+        .thirdsection {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 50px;
+            /* spacing between skills and about me */
+            padding: 50px;
+            flex-wrap: wrap;
+        }
+
+        .skills ul {
+            list-style: none;
+            padding: 0;
+            font-weight: bold;
+            color: #ccc;
+        }
+
+        .Me {
+            
+            text-align: center;
+            color: #ccc;
+        }
+
+       .container{
+        margin-left: 350px;
+        margin: 3cm;
+       }
+
+       .item-1{
+        margin-left: 8ch;
+       }
+
+       .nav ul{
+        margin-right: 2cm;
+       }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left"></div>
+            <div class="right"></div>
+            <div class="Frame">
+                <ul>
+                    <li> <a href="#Service">Home</a></li>
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>Projects</li>
+                    <li>Contact Me</li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                <h1 class="glow">KUNAL .</h1>
+                Hi, My Name is <span class="purple">Kunal</span>
+                <div>And I am a passionate</div>
+                <span id="element"></span>
+            </div>
+
+
+            </div>
+        </section>
+        <hr>
+        <section id="Service" class="secondSection">
+            <span class="text-gray">What I Have Done So Far</span>
+            <div class="Work">
+                <h1>Work Experience</h1>
+            </div>
+
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="images/webimg/bg-2.png" alt="">
+                    <div class="vertical-title">
+                        HTML Developer (2010-2012)
+                    </div>
+                    <div class="vertical-Desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, molestias ratione. Cumque est
+                        praesentium corporis illum alias consectetur incidunt, numquam distinctio molestias at!
+                    </div>
+                </div>
+
+                <div class="vertical">
+                    <img class="image-top" src="images/webimg/bg-2.png" alt="">
+                    <div class="vertical-title">
+                        Java Developer (2012-2014)
+                    </div>
+                    <div class="vertical-Desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, molestias ratione. Cumque est
+                        praesentium corporis illum alias consectetur incidunt, numquam distinctio molestias at!
+                    </div>
+                </div>
+
+                <div class="vertical">
+                    <img class="image-top" src="images/webimg/bg-2.png" alt="">
+                    <div class="vertical-title">
+                        Python Developer (2014-2016)
+                    </div>
+                    <div class="vertical-Desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, molestias ratione. Cumque est
+                        praesentium corporis illum alias consectetur incidunt, numquam distinctio molestias at!
+                    </div>
+                </div>
+
+                <div class="vertical">
+                    <img class="image-top" src="images/webimg/bg-2.png" alt="">
+                    <div class="vertical-title">
+                        Web Developer (2016-2018)
+                    </div>
+                    <div class="vertical-Desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, molestias ratione. Cumque est
+                        praesentium corporis illum alias consectetur incidunt, numquam distinctio molestias at!
+                    </div>
+                </div>
+
+                <div class="vertical">
+                    <img class="image-top" src="images/webimg/bg-2.png" alt="">
+                    <div class="vertical-title">
+                        Android Developer (2018-2020)
+                    </div>
+                    <div class="vertical-Desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, molestias ratione. Cumque est
+                        praesentium corporis illum alias consectetur incidunt, numquam distinctio molestias at!
+                    </div>
+                </div>
+
+                <div class="vertical">
+                    <img class="image-top" src="images/webimg/bg-2.png" alt="">
+                    <div class="vertical-title">
+                        DSA Developer (2020-2022)
+                    </div>
+                    <div class="vertical-Desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, molestias ratione. Cumque est
+                        praesentium corporis illum alias consectetur incidunt, numquam distinctio molestias at!
+                    </div>
+                </div>
+
+                <div class="vertical"></div>
+            </div>
+        </section>
+        <hr>
+
+        <section class="thirdsection">
+            <div class="footer">
+                <div class="Toy">
+                    <h3>SKILLS :</h3>
+                </div>
+               <nav>
+                <ul> 
+                      <li>* Java Developer</li>
+                      <li>* Web Developer</li>
+                      <li>* JavaScript Developer</li>
+                      <li>* Video Developer</li>
+                      <li>* React js Developer</li>
+                      <li>* Node js Developer</li>
+                </ul> 
+               </nav> 
+
+                <div class="Me">
+                    <h2> *About Me*</h2>
+                   
+                    <p>
+                        I am a passionate Java Developer in Capgemini in last 3 years.
+                        I also work in Microsoft as a data analyst for 3 years and after that came back to India.
+                        My name is Kunal Halpatrao and I belong to Murbad Taluka in Thane.
+                    </p>
+
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'Graphic Designer', 'Web Designer', 'Video Editor', 'Java Developer'],
+            typeSpeed: 50,
+            loop: true,
+
+        });
+    </script>
+
+</body>
+
+</html>
