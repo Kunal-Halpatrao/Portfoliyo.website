@@ -49,7 +49,7 @@
 
     nav ul {
       list-style: none;
-      color: #f9f9f9;
+      color: hsl(0, 0%, 96%);
       display: flex;
       gap: 20px;
     }
@@ -63,12 +63,12 @@
     }
 
     nav ul li a:hover {
-      color: #00bcd4;
+      color: #ff3791;
       font-weight: bold;
       font-size: 20px;
     }
 
-     html {
+    html {
       scroll-behavior: smooth;
     }
 
@@ -99,7 +99,8 @@
     }
 
     .btn:hover {
-      background: #0195a2;
+     background: #d48cac;
+      color: rgb(2, 2, 2);
     }
 
     section {
@@ -237,25 +238,24 @@
     }
 
     .hero-container {
-     display: flex;
-     flex-direction: column;
-     align-items: center;
-     gap: 20px;
-  }
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
 
-  .hero-img {
-   width: 180px;
-   height: 180px;
-   border-radius: 50%;   /* gol photo */
-   object-fit: cover;
-   border: 3px solid #00bcd4; /* stylish border */
-   box-shadow: 0 4px 10px rgba(0, 188, 212, 0.5);
- }
+    .hero-img {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #00bcd4;
+      box-shadow: 0 8px 10px rgba(63, 231, 254, 0.979);
+    }
 
-  .hero-text {
-  text-align: center;
-  }
-
+    .hero-text {
+      text-align: center;
+    }
   </style>
 </head>
 
@@ -276,22 +276,15 @@
   </header>
 
   <!-- Hero -->
-<section id="hero" class="hero">
-  <div class="hero-container">
-    <img src="c61b7e28-df74-4000-9fee-418b78b707d3.jpg" alt="Kunal Photo" class="hero-img">
-    <div class="hero-text">
-      <h2>Hi, I'm <span>Kunal</span></h2>
-      <p>I am a passionate <span id="element"></span></p>
-      <a href="resume.pdf" class="btn">Download Resume</a>
-    </div>
-  </div>
-</section>
-
-  <!-- Hero -->
   <section id="hero" class="hero">
-    <h2>Hi, I'm <span>Kunal</span></h2>
-    <p>I am a passionate <span id="element"></span></p>
-    <a href="resume.pdf" class="btn">Download Resume</a>
+    <div class="hero-container">
+      <img src="Kunal Image-removebg-preview.jpg" alt="Kunal Photo" class="hero-img">
+      <div class="hero-text">
+        <h2>Hi, I'm <span>Kunal</span></h2>
+        <p>I am a passionate <span id="element"></span></p>
+        <a href="resume.pdf" class="btn">Download Resume</a>
+      </div>
+    </div>
   </section>
 
 
@@ -414,4 +407,5 @@
     });
   </script>
 </body>
+
 </html>
