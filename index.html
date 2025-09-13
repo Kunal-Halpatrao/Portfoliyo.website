@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kunal Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: rgb(12, 12, 26);
+      color: wheat;
+      line-height: 1.6;
+    }
+
+    header {
+      background: black;
+      padding: 15px 50px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    header h1 {
+      font-size: 1.5rem;
+      color: #17daf4;
+      font-weight: 700;
+      padding-top: 24px;
+      padding-left: 24px;
+      padding-right: 24px;
+      padding-bottom: 9px;
+      margin-bottom: 20px;
+      margin-left: 20px;
+      margin-right: 40px;
+      border-radius: 55px;
+      box-shadow: 0 8px 8px rgb(45, 200, 243);
+    }
+
+
+    nav ul {
+      list-style: none;
+      color: hsl(0, 0%, 96%);
+      display: flex;
+      gap: 20px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #f9f9f9;
+      font-weight: 450;
+      font-size: 18px;
+      transition: ease-in 0.5s;
+    }
+
+    nav ul li a:hover {
+      color: #ff3791;
+      font-weight: bold;
+      font-size: 20px;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 80px 20px;
+    }
+
+    .hero h2 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    .hero span {
+      color: #00bcd4;
+    }
+
+    .btn {
+      margin-top: 20px;
+      display: inline-block;
+      padding: 10px 20px;
+      background: #00bcd4;
+      color: #f9f3f3;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+     background: #d48cac;
+      color: rgb(2, 2, 2);
+    }
+
+    section {
+      padding: 20px 20px;
+      padding-bottom: 50px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 2rem;
+      color: #00bcd4;
+    }
+
+    .card {
+      background: #1e1c3a;
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      justify-content: center;
+    }
+
+    .skills-box {
+      background: #1e1c3a;
+      padding: 20px;
+      border-radius: 15px;
+      margin: 20px auto;
+      width: 80%;
+      max-width: 500px;
+      box-shadow: 0 4px 8px rgba(7, 209, 249, 0.3);
+    }
+
+    .skills-box h3 {
+      color: #00bcd4;
+      margin-bottom: 15px;
+      font-size: 1.3rem;
+      border-bottom: 2px solid #00bcd4;
+      padding-bottom: 5px;
+    }
+
+    .skills-list {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .skills-list li {
+      background: #2a2754;
+      color: #ced3d4;
+      padding: 10px 15px;
+      margin: 8px 0;
+      border-radius: 10px;
+      font-size: 1rem;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    .skills-list li:hover {
+      background: #25bace;
+      color: #fff;
+      cursor: pointer;
+    }
+
+    .skill {
+      background: #1e1c3a;
+      padding: 10px 20px;
+      border-radius: 20px;
+      font-weight: 500;
+      color: #00bcd4;
+    }
+
+    footer {
+      background: #141234;
+      text-align: center;
+      padding: 20px;
+      margin-top: 50px;
+      color: #aaa;
+    }
+
+    footer a {
+      color: #00bcd4;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    section div h3 {
+      color: #00bcd4;
+    }
+
+    section .contact {
+      color: #00bcd4;
+    }
+
+    section h2 {
+      background: #1e1c3a;
+      padding: 10px 20px;
+      border-radius: 10px;
+      margin: 20px auto;
+      box-shadow: 0 4px 6px rgba(22, 216, 255, 0.972);
+      text-align: center;
+      font-size: 1.8rem;
+      line-height: 1.2;
+      width: fit-content;
+      min-width: 300px;
+      max-width: 70%;
+    }
+
+    .about {
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+
+    contact {
+      color: #00bcd4;
+    }
+
+    .hero p {
+      font-size: 25px;
+    }
+
+    .hero span {
+      color: #21bafb;
+    }
+
+    .hero-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .hero-img {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #00bcd4;
+      box-shadow: 0 8px 10px rgba(63, 231, 254, 0.979);
+    }
+
+    .hero-text {
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <header>
+    <h1>Kunal Halpatrao</h1>
+    <nav>
+      <ul>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section id="hero" class="hero">
+    <div class="hero-container">
+      <img src="Kunal Image-removebg-preview.jpg" alt="Kunal Photo" class="hero-img">
+      <div class="hero-text">
+        <h2>Hi, I'm <span>Kunal</span></h2>
+        <p>I am a passionate <span id="element"></span></p>
+        <a href="resume.pdf" class="btn">Download Resume</a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- About -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p style="text-align:center; max-width:800px; margin:auto; color: whitesmoke;">
+      I am Kunal Halpatrao from Murbad, Thane. Currently pursuing B.Tech in IT (7hth Semester).
+      I am passionate about Java, Web Development and building real-world applications like SMS Sender, Email Sender,
+      GST Calculator, etc.
+    </p>
+  </section>
+
+  <!-- Education -->
+  <section id="education">
+    <h2>Education</h2>
+    <div class="card">
+      <h3>B.Tech in Information Technology</h3>
+      <p>Konkan Gyanpeeth Clg Of Engineering, Karjat</p>
+      <p>2025 – Present (7th Semester)</p>
+    </div>
+    <div class="card">
+      <h3>HSC – Science</h3>
+      <p>Junior College Shivale</p>
+      <p>2020 – 2022</p>
+    </div>
+    <div class="card">
+      <h3>SSC</h3>
+      <p>Abhinav Vidyamandir Kasgaon High School</p>
+      <p>2017 - 2020</p>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience">
+    <h2>Experience</h2>
+    <div class="card">
+      <h3>Web Development Internship</h3>
+      <p>Labmentix (Sep 2025 – Oct 2025)</p>
+      <p>Worked on front-end and back-end development tasks, built responsive web pages, and integrated database-driven
+        features.</p>
+    </div>
+    <div class="card">
+      <h3>Java Developer Internship</h3>
+      <p>JavaSpark Solutions (Dec 2024 - Jan 2025)</p>
+      <p>Worked on Desktop Applications Using Java, build real-world applications.</p>
+    </div>
+    <div class="card">
+      <h3>Java Projects</h3>
+      <p>Self-Developed</p>
+      <p>Created SMS Sender, Email Sender, GST Calculator and a Profile Management System using Java, JDBC, and MySQL.
+      </p>
+    </div>
+    <div class="card">
+      <h3>My Courses</h3>
+      <p> 1. Java Developer and DSA From Kamal Classes</p>
+      <p> 2. MySQL/PLSQL Database from Kamal Classes</p>
+      <p> 3. DSA with Java from Apna College</p>
+    </div>
+  </section>
+
+
+
+  <!-- Skills -->
+  <section id="skills">
+    <h2>My Skills</h2>
+    <div class="skills-box">
+      <h3>Tech Skills:</h3>
+      <ul class="skills-list">
+        <li>Core Java</li>
+        <li>Advanced Java</li>
+        <li>DSA(Basic)</li>
+      </ul>
+    </div>
+
+    <div class="skills-box">
+      <h3>DataBase:</h3>
+      <ul class="skills-list">
+        <li>MySQL</li>
+        <li>PLSQL</li>
+      </ul>
+    </div>
+
+    <div class="skills-box">
+      <h3>Development:</h3>
+      <ul class="skills-list">
+        <li>GitHub</li>
+        <li>Maven</li>
+      </ul>
+    </div>
+
+
+
+  </section>
+
+
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <p style="text-align:center; color: #bfc3c4;">
+      📧 Email: <a style="color: #00bcd4;" href="mailto:kunal@example.com">halpatraokunal6@gmail.com</a><br>
+      🔗 LinkedIn: <a style="color: #00bcd4;" href="#">linkedin.com/in/kunal</a><br>
+      💻 GitHub: <a style="color: #00bcd4;" href="#">github.com/Kunal-Halpatrao</a>
+    </p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>Kunal's Portfolio (2025) | Made with ❤️ by Kunal</p>
+  </footer>
+
+  <!-- Typed.js -->
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script>
+    var typed = new Typed('#element', {
+      strings: ['Web Developer', 'Java Developer', 'Graphic Designer', 'React Developer', 'Video Editor'],
+      typeSpeed: 50,
+      loop: true,
+    });
+  </script>
+</body>
+
+</html>
