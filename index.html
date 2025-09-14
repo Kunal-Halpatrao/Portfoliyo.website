@@ -209,17 +209,6 @@
       padding: 20px;
       margin-top: 50px;
       color: #fff;
-      /* White footer text */
-    }
-
-    footer a {
-      color: #ff00ff;
-      margin: 0 10px;
-      text-decoration: none;
-    }
-
-    footer a:hover {
-      text-decoration: underline;
     }
 
     section div h3 {
@@ -230,12 +219,9 @@
       color: #111;
     }
 
-    /* ===== Base Colors ===== */
     body {
       background: #ffffff;
-      /* White background */
       color: #111111;
-      /* Black text */
       font-family: 'Poppins', sans-serif;
     }
 
@@ -345,35 +331,18 @@
       color: #fff;
     }
 
-    /* ===== Footer ===== */
     footer {
-      background: #111;
-      color: #fff;
+      background: #e27396;
+      color: #020000;
     }
 
     footer a {
       color: #ff00ff;
     }
 
-    footer a:hover {
-      text-decoration: underline;
-    }
-
-    /* ===== Extra Glow Accent (like recording) ===== */
     section {
       position: relative;
     }
-
-    /* section::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      height: 8px;
-      background: linear-gradient(90deg, transparent, #ff00ff, transparent);
-      box-shadow: 0 0 25px #ff00ff;
-    } */
 
     section::before {
       content: "";
@@ -396,10 +365,6 @@
       background: linear-gradient(90deg, transparent, #e75480, transparent);
       box-shadow: 0 0 10px #e75480;
     }
-
-
-
-
 
     #element {
       color: #e27396;
@@ -426,8 +391,6 @@
     .hero p {
       font-size: 25px;
     }
-
-
 
     #projects {
       padding: 60px 20px;
@@ -495,14 +458,77 @@
       text-align: left;
       transition: 0.3s;
       box-shadow: 0 0 15px rgba(124, 205, 255, 0.989);
-      
+
     }
 
     .project-card:hover {
       transform: translateY(-8px);
       box-shadow: 0 0 30px #e75480,
-        0 0 60px #e75480;;
+        0 0 60px #e75480;
+      ;
     }
+
+    .contact {
+      text-align: center;
+      padding: 50px 20px;
+    }
+
+    .contact-container {
+      display: flex;
+      justify-content: center;
+      align-items: stretch;
+      gap: 20px;
+      /* space between cards */
+      margin-top: 30px;
+      flex-wrap: wrap;
+      /* responsive ke liye */
+    }
+
+    .contact-card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 20px;
+      width: 280px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      transition: 0.3s;
+    }
+
+    .contact-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(231, 84, 128, 0.4);
+      /* pink glow hover */
+    }
+
+    .contact-card i {
+      font-size: 30px;
+      margin-bottom: 10px;
+      color: #e75480;
+      /* pink theme */
+    }
+
+    .contact-card h3 {
+      margin-bottom: 5px;
+    }
+
+    .contact-card p {
+      font-size: 13px;
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    .contact-card a {
+      text-decoration: none;
+      color: #e75480;
+      font-weight: bold;
+    }
+
+    footer {
+      color: #070002;
+    }
+
+   a {
+    text-decoration: none;
+   }
   </style>
 </head>
 
@@ -659,19 +685,38 @@
   </section>
 
 
-  <!-- Contact -->
-  <section id="contact">
+  <section id="contact"> 
     <h2>Contact</h2>
-    <p style="text-align:center; color: #111;">
-      📧 Email: <a style="color: #ff00ff;" href="mailto:halpatraokunal6@gmail.com">halpatraokunal6@gmail.com</a><br>
-      🔗 LinkedIn: <a style="color: #ff00ff;" href="#">linkedin.com/in/kunal</a><br>
-      💻 GitHub: <a style="color: #ff00ff;" href="#">github.com/Kunal-Halpatrao</a>
-    </p>
+    <div class="contact-container">
+
+      <div class="contact-card">
+        <i class="fa fa-envelope"></i>
+        <h3>Email</h3>
+        <p>halpatraokunal6@gmail.com</p>
+        <a href="mailto:halpatraokunal6@gmail.com"></a>
+      </div>
+
+      <div class="contact-card">
+        <i class="fa fa-whatsapp"></i>
+        <h3>WhatsApp</h3>
+        <p>+91- 8459342236</p>
+        <a href="https://wa.me/918459342236"</a>
+      </div>
+
+      <div class="contact-card">
+        <i class="fa fa-facebook-messenger"></i>
+        <h3>Linkedin</h3>
+        <p>https://www.linkedin.com/in/kunal-halpatrao-021212384/</p>
+        <a href="https://www.linkedin.com/in/kunal-halpatrao-021212384/"</a>
+      </div>
+
+    </div>
   </section>
+
 
   <!-- Footer -->
   <footer>
-    <p>Kunal's Portfolio (2025) | Made with ❤️ by Kunal</p>
+    <p>Kunal's Portfolio (2025) | Made by Kunal</p>
   </footer>
 
   <!-- Typed.js -->
