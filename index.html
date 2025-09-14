@@ -15,13 +15,20 @@
 
     body {
       font-family: 'Poppins', sans-serif;
-      background-color: rgb(12, 12, 26);
-      color: wheat;
+      background-color: #ffffff;
+      /* White background */
+      color: #111;
+      /* Black text */
       line-height: 1.6;
     }
 
+    html {
+      scroll-behavior: smooth;
+    }
+
     header {
-      background: black;
+      color: #ea9ab2;
+      background-color: #e27396;
       padding: 15px 50px;
       display: flex;
       justify-content: space-between;
@@ -29,83 +36,86 @@
       position: sticky;
       top: 0;
       z-index: 100;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     }
 
     header h1 {
       font-size: 1.5rem;
-      color: #17daf4;
-      font-weight: 700;
-      padding-top: 24px;
-      padding-left: 24px;
-      padding-right: 24px;
-      padding-bottom: 9px;
-      margin-bottom: 20px;
-      margin-left: 20px;
-      margin-right: 40px;
+      color: #111;
+      font-weight: bold;
+      padding: 12px 24px;
       border-radius: 55px;
-      box-shadow: 0 8px 8px rgb(45, 200, 243);
+      background: #ffffff;
+      background: #e27396;
+      box-shadow: 0 8px 10px rgba(255, 0, 255, 0.4);
     }
+
 
 
     nav ul {
       list-style: none;
-      color: hsl(0, 0%, 96%);
       display: flex;
       gap: 20px;
+      color: #e27396;
     }
 
     nav ul li a {
       text-decoration: none;
-      color: #f9f9f9;
-      font-weight: 450;
+      color: #111;
+      font-weight: 500;
       font-size: 18px;
-      transition: ease-in 0.5s;
+      transition: ease-in 0.3s;
     }
 
     nav ul li a:hover {
-      color: #ff3791;
+      color: #ea9ab2;
+      /* Pink hover */
       font-weight: bold;
-      font-size: 20px;
     }
 
-    html {
-      scroll-behavior: smooth;
-    }
+
 
     .hero {
       text-align: center;
       padding: 80px 20px;
+      position: relative;
     }
 
     .hero h2 {
       font-size: 2.5rem;
       margin-bottom: 10px;
+      color: #111;
+      /* Black heading */
     }
 
     .hero span {
-      color: #00bcd4;
+      color: #ff00ff;
+      /* Pink highlight */
     }
 
     .btn {
       margin-top: 20px;
       display: inline-block;
-      padding: 10px 20px;
-      background: #00bcd4;
-      color: #f9f3f3;
-      border-radius: 5px;
+      padding: 12px 28px;
+      background: #ff00ff;
+      /* Pink button */
+      color: #fff;
+      /* White text inside button */
+      border-radius: 10px;
       text-decoration: none;
       font-weight: 600;
       transition: 0.3s;
     }
 
     .btn:hover {
-     background: #d48cac;
-      color: rgb(2, 2, 2);
+      background: #000;
+      /* Black on hover */
+      color: #fff;
+      box-shadow: 0 0 15px #ff00ff;
     }
 
     section {
-      padding: 20px 20px;
-      padding-bottom: 50px;
+      padding: 40px 20px;
       max-width: 1000px;
       margin: auto;
     }
@@ -114,39 +124,37 @@
       text-align: center;
       margin-bottom: 40px;
       font-size: 2rem;
-      color: #00bcd4;
+      color: #111;
+      /* Black headings */
     }
 
     .card {
-      background: #1e1c3a;
+      background: #fff;
       padding: 20px;
-      border-radius: 10px;
+      border-radius: 15px;
       margin-bottom: 20px;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
-    }
-
-    .skills {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 15px;
-      justify-content: center;
+      color: #111;
+      /* Black text */
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
     }
 
     .skills-box {
-      background: #1e1c3a;
+      background: #fff;
       padding: 20px;
       border-radius: 15px;
       margin: 20px auto;
       width: 80%;
       max-width: 500px;
-      box-shadow: 0 4px 8px rgba(7, 209, 249, 0.3);
+      box-shadow: 0 4px 8px rgba(255, 0, 255, 0.3);
     }
 
     .skills-box h3 {
-      color: #00bcd4;
+      color: #111;
+      /* Black heading */
       margin-bottom: 15px;
       font-size: 1.3rem;
-      border-bottom: 2px solid #00bcd4;
+      border-bottom: 2px solid #ff00ff;
+      /* Pink underline */
       padding-bottom: 5px;
     }
 
@@ -156,8 +164,8 @@
     }
 
     .skills-list li {
-      background: #2a2754;
-      color: #ced3d4;
+      background: #f7f7f7;
+      color: #111;
       padding: 10px 15px;
       margin: 8px 0;
       border-radius: 10px;
@@ -167,74 +175,11 @@
     }
 
     .skills-list li:hover {
-      background: #25bace;
+      background: #ff00ff;
+      /* Pink hover */
       color: #fff;
+      /* White text */
       cursor: pointer;
-    }
-
-    .skill {
-      background: #1e1c3a;
-      padding: 10px 20px;
-      border-radius: 20px;
-      font-weight: 500;
-      color: #00bcd4;
-    }
-
-    footer {
-      background: #141234;
-      text-align: center;
-      padding: 20px;
-      margin-top: 50px;
-      color: #aaa;
-    }
-
-    footer a {
-      color: #00bcd4;
-      margin: 0 10px;
-      text-decoration: none;
-    }
-
-    footer a:hover {
-      text-decoration: underline;
-    }
-
-    section div h3 {
-      color: #00bcd4;
-    }
-
-    section .contact {
-      color: #00bcd4;
-    }
-
-    section h2 {
-      background: #1e1c3a;
-      padding: 10px 20px;
-      border-radius: 10px;
-      margin: 20px auto;
-      box-shadow: 0 4px 6px rgba(22, 216, 255, 0.972);
-      text-align: center;
-      font-size: 1.8rem;
-      line-height: 1.2;
-      width: fit-content;
-      min-width: 300px;
-      max-width: 70%;
-    }
-
-    .about {
-      padding-left: 40px;
-      padding-right: 40px;
-    }
-
-    contact {
-      color: #00bcd4;
-    }
-
-    .hero p {
-      font-size: 25px;
-    }
-
-    .hero span {
-      color: #21bafb;
     }
 
     .hero-container {
@@ -249,12 +194,314 @@
       height: 180px;
       border-radius: 50%;
       object-fit: cover;
-      border: 3px solid #00bcd4;
-      box-shadow: 0 8px 10px rgba(63, 231, 254, 0.979);
+      border: 4px solid #fff;
+      box-shadow: 0 0 30px rgba(255, 0, 255, 0.6);
+      /* Pink glow */
     }
 
     .hero-text {
       text-align: center;
+    }
+
+    footer {
+      background: #111;
+      text-align: center;
+      padding: 20px;
+      margin-top: 50px;
+      color: #fff;
+      /* White footer text */
+    }
+
+    footer a {
+      color: #ff00ff;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    section div h3 {
+      color: #111;
+    }
+
+    section .contact {
+      color: #111;
+    }
+
+    /* ===== Base Colors ===== */
+    body {
+      background: #ffffff;
+      /* White background */
+      color: #111111;
+      /* Black text */
+      font-family: 'Poppins', sans-serif;
+    }
+
+    /* ===== Header / Navbar ===== */
+    header {
+      background: #fff;
+      color: #111;
+      box-shadow: 0 4px 10px black;
+    }
+
+    header h1 {
+      color: #111;
+      background: #fff;
+      padding: 10px 20px;
+      border-radius: 50px;
+      box-shadow: 0 0 25px #e75480;
+    }
+
+    nav ul li a {
+      /* color: #111; */
+      color: #fb1a61;
+      transition: 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #2dc2fc;
+      /* pink on hover */
+      font-weight: bold;
+    }
+
+    /* ===== Hero Section ===== */
+    .hero h2 {
+      color: #111;
+    }
+
+    .hero h2 span {
+      color: #ff00ff;
+      /* pink highlight */
+    }
+
+    .hero p {
+      color: #111;
+    }
+
+    .hero .btn {
+      background: #e27396;
+      color: #fff;
+      border-radius: 10px;
+      transition: 0.3s;
+    }
+
+    .hero .btn:hover {
+      background: #000;
+      color: #fff;
+      box-shadow: 0 0 20px #ff00ff;
+    }
+
+    /* Hero image glow */
+    .hero-img {
+      border-radius: 50%;
+      border: 4px solid #fff;
+      box-shadow: 0 0 40px rgba(255, 0, 255, 0.7);
+      /* strong pink glow */
+    }
+
+    /* ===== Cards (Education, Experience) ===== */
+    .card {
+      background: #fff;
+      color: #111;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08),
+        0 0 15px rgba(255, 0, 255, 0.3);
+      /* pink aura */
+    }
+
+    .card:hover {
+      background-color: #100606;
+      color: white;
+      transition: 0.5s;
+    }
+
+    .card:hover h3 {
+      color: white;
+    }
+
+
+    /* ===== Skills Section ===== */
+    .skills-box {
+      background: #fff;
+      border-radius: 15px;
+      box-shadow: 0 0 12px rgba(255, 0, 255, 0.4);
+    }
+
+    .skills-box h3 {
+      color: #111;
+      border-bottom: 2px solid #ff00ff;
+    }
+
+    .skills-list li {
+      background: #f7f7f7;
+      color: #111;
+      transition: 0.3s;
+    }
+
+    .skills-list li:hover {
+      background: #e27396;
+      color: #fff;
+    }
+
+    /* ===== Footer ===== */
+    footer {
+      background: #111;
+      color: #fff;
+    }
+
+    footer a {
+      color: #ff00ff;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* ===== Extra Glow Accent (like recording) ===== */
+    section {
+      position: relative;
+    }
+
+    /* section::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 8px;
+      background: linear-gradient(90deg, transparent, #ff00ff, transparent);
+      box-shadow: 0 0 25px #ff00ff;
+    } */
+
+    section::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, transparent, #e75480, transparent);
+      box-shadow: 0 0 10px #e75480;
+    }
+
+    section::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, transparent, #e75480, transparent);
+      box-shadow: 0 0 10px #e75480;
+    }
+
+
+
+
+
+    #element {
+      color: #e27396;
+    }
+
+    .hero-text h2 span {
+      color: #e6638d;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 0 20px rgb(96, 239, 255);
+    }
+
+    .skills-list {
+      background-color: #e27396;
+    }
+
+    .about h2 {
+      border-radius: 2px sloid pink;
+
+    }
+
+    .hero p {
+      font-size: 25px;
+    }
+
+
+
+    #projects {
+      padding: 60px 20px;
+    }
+
+    #projects h2 {
+      text-align: center;
+      font-size: 2rem;
+      color: #111;
+      margin-bottom: 40px;
+      position: relative;
+    }
+
+    .projects-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 25px;
+      box-shadow: #e27396;
+    }
+
+    .project-card {
+      background: #fff;
+      border-radius: 15px;
+      box-shadow: 0 9px 12px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      transition: 0.3s;
+      text-align: left;
+      box-shadow: 9px pink;
+    }
+
+    .project-card img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+
+    .project-card h3 {
+      font-size: 1.3rem;
+      color: #222;
+      margin-bottom: 10px;
+    }
+
+    .project-card p {
+      font-size: 0.95rem;
+      color: #555;
+      margin-bottom: 15px;
+    }
+
+    .learn-btn {
+      color: #e75480;
+      /* same as your button */
+      font-weight: 600;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .learn-btn:hover {
+      color: #01afff;
+    }
+
+    .project-card {
+      background: #fff;
+      border-radius: 15px;
+      padding: 20px;
+      text-align: left;
+      transition: 0.3s;
+      box-shadow: 0 0 15px rgba(124, 205, 255, 0.989);
+      
+    }
+
+    .project-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 0 30px #e75480,
+        0 0 60px #e75480;;
     }
   </style>
 </head>
@@ -270,6 +517,7 @@
         <li><a href="#education">Education</a></li>
         <li><a href="#experience">Experience</a></li>
         <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">projects</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
@@ -278,7 +526,7 @@
   <!-- Hero -->
   <section id="hero" class="hero">
     <div class="hero-container">
-      <img src="Kunal Image-removebg-preview.jpg" alt="Kunal Photo" class="hero-img">
+      <img src="Kunal Image-Photoroom.png" alt="Kunal Photo" class="hero-img">
       <div class="hero-text">
         <h2>Hi, I'm <span>Kunal</span></h2>
         <p>I am a passionate <span id="element"></span></p>
@@ -287,19 +535,18 @@
     </div>
   </section>
 
-
   <!-- About -->
-  <section id="about">
+  <section id="about" class="about">
     <h2>About Me</h2>
-    <p style="text-align:center; max-width:800px; margin:auto; color: whitesmoke;">
-      I am Kunal Halpatrao from Murbad, Thane. Currently pursuing B.Tech in IT (7hth Semester).
+    <p style="text-align:center; max-width:800px; margin:auto; color: #111;">
+      I am Kunal Halpatrao from Murbad, Thane. Currently pursuing B.Tech in IT (7th Semester).
       I am passionate about Java, Web Development and building real-world applications like SMS Sender, Email Sender,
       GST Calculator, etc.
     </p>
   </section>
 
   <!-- Education -->
-  <section id="education">
+  <section id="education" class="education">
     <h2>Education</h2>
     <div class="card">
       <h3>B.Tech in Information Technology</h3>
@@ -346,8 +593,6 @@
     </div>
   </section>
 
-
-
   <!-- Skills -->
   <section id="skills">
     <h2>My Skills</h2>
@@ -361,7 +606,7 @@
     </div>
 
     <div class="skills-box">
-      <h3>DataBase:</h3>
+      <h3>Database:</h3>
       <ul class="skills-list">
         <li>MySQL</li>
         <li>PLSQL</li>
@@ -375,20 +620,52 @@
         <li>Maven</li>
       </ul>
     </div>
-
-
-
   </section>
 
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>My Projects That I've Worked</h2>
+    <p style="text-align:center; max-width:800px; margin:auto; color:#444;">
+
+    </p>
+
+    <div class="projects-container">
+
+      <!-- Project Card 1 -->
+      <div class="project-card">
+        <img src="image.png" alt="Portfolio Project">
+        <h3>Personal Portfolio</h3>
+        <p>In this project I've made my personal portfolio website that showcases my skills as well as my qualifications
+          & experience.</p>
+        <a href="#" class="learn-btn">Learn More →</a>
+      </div>
+
+      <!-- Project Card 2 -->
+      <div class="project-card">
+        <img src="image copy.png" alt="Food App">
+        <h3>Food App</h3>
+        <p>In this project I've made an food choosen app for users using Desktop Applications.</p>
+        <a href="#" class="learn-btn">Learn More →</a>
+      </div>
+
+      <!-- Project Card 3 -->
+      <div class="project-card">
+        <img src="image copy 2.png" alt="Shoose App">
+        <h3>Shooes App</h3>
+        <p>In this project I've made a Shooes Buying App. It's Like an A E-commerce site for users.</p>
+        <a href="#" class="learn-btn">Learn More →</a>
+      </div>
+    </div>
+  </section>
 
 
   <!-- Contact -->
   <section id="contact">
     <h2>Contact</h2>
-    <p style="text-align:center; color: #bfc3c4;">
-      📧 Email: <a style="color: #00bcd4;" href="mailto:kunal@example.com">halpatraokunal6@gmail.com</a><br>
-      🔗 LinkedIn: <a style="color: #00bcd4;" href="#">linkedin.com/in/kunal</a><br>
-      💻 GitHub: <a style="color: #00bcd4;" href="#">github.com/Kunal-Halpatrao</a>
+    <p style="text-align:center; color: #111;">
+      📧 Email: <a style="color: #ff00ff;" href="mailto:halpatraokunal6@gmail.com">halpatraokunal6@gmail.com</a><br>
+      🔗 LinkedIn: <a style="color: #ff00ff;" href="#">linkedin.com/in/kunal</a><br>
+      💻 GitHub: <a style="color: #ff00ff;" href="#">github.com/Kunal-Halpatrao</a>
     </p>
   </section>
 
