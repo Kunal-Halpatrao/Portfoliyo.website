@@ -16,9 +16,7 @@
     body {
       font-family: 'Poppins', sans-serif;
       background-color: #ffffff;
-      /* White background */
       color: #111;
-      /* Black text */
       line-height: 1.6;
     }
 
@@ -69,7 +67,6 @@
 
     nav ul li a:hover {
       color: #ea9ab2;
-      /* Pink hover */
       font-weight: bold;
     }
 
@@ -85,12 +82,10 @@
       font-size: 2.5rem;
       margin-bottom: 10px;
       color: #111;
-      /* Black heading */
     }
 
     .hero span {
       color: #ff00ff;
-      /* Pink highlight */
     }
 
     .btn {
@@ -98,9 +93,7 @@
       display: inline-block;
       padding: 12px 28px;
       background: #ff00ff;
-      /* Pink button */
       color: #fff;
-      /* White text inside button */
       border-radius: 10px;
       text-decoration: none;
       font-weight: 600;
@@ -109,7 +102,6 @@
 
     .btn:hover {
       background: #000;
-      /* Black on hover */
       color: #fff;
       box-shadow: 0 0 15px #ff00ff;
     }
@@ -176,9 +168,7 @@
 
     .skills-list li:hover {
       background: #ff00ff;
-      /* Pink hover */
       color: #fff;
-      /* White text */
       cursor: pointer;
     }
 
@@ -196,7 +186,6 @@
       object-fit: cover;
       border: 4px solid #fff;
       box-shadow: 0 0 30px rgba(255, 0, 255, 0.6);
-      /* Pink glow */
     }
 
     .hero-text {
@@ -225,7 +214,6 @@
       font-family: 'Poppins', sans-serif;
     }
 
-    /* ===== Header / Navbar ===== */
     header {
       background: #fff;
       color: #111;
@@ -241,25 +229,21 @@
     }
 
     nav ul li a {
-      /* color: #111; */
       color: #fb1a61;
       transition: 0.3s;
     }
 
     nav ul li a:hover {
       color: #2dc2fc;
-      /* pink on hover */
       font-weight: bold;
     }
 
-    /* ===== Hero Section ===== */
     .hero h2 {
       color: #111;
     }
 
     .hero h2 span {
       color: #ff00ff;
-      /* pink highlight */
     }
 
     .hero p {
@@ -279,36 +263,32 @@
       box-shadow: 0 0 20px #ff00ff;
     }
 
-    /* Hero image glow */
     .hero-img {
       border-radius: 50%;
       border: 4px solid #fff;
       box-shadow: 0 0 40px rgba(255, 0, 255, 0.7);
-      /* strong pink glow */
     }
 
-    /* ===== Cards (Education, Experience) ===== */
     .card {
       background: #fff;
       color: #111;
       border-radius: 15px;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08),
-        0 0 15px rgba(255, 0, 255, 0.3);
-      /* pink aura */
+         0 4px 15px rgb(233, 113, 165);
+       /* box-shadow:0 5px 12px #eb9db5 */
+       /* 0 0 15px #f8a3be, */
     }
 
     .card:hover {
-      background-color: #100606;
-      color: white;
+      background-color: #f8a3be       ;
+      color: rgb(0, 23, 23);
       transition: 0.5s;
     }
 
     .card:hover h3 {
-      color: white;
+      color: rgb(4, 93, 93);
     }
 
-
-    /* ===== Skills Section ===== */
     .skills-box {
       background: #fff;
       border-radius: 15px;
@@ -441,7 +421,6 @@
 
     .learn-btn {
       color: #e75480;
-      /* same as your button */
       font-weight: 600;
       text-decoration: none;
       transition: 0.3s;
@@ -478,10 +457,8 @@
       justify-content: center;
       align-items: stretch;
       gap: 20px;
-      /* space between cards */
       margin-top: 30px;
       flex-wrap: wrap;
-      /* responsive ke liye */
     }
 
     .contact-card {
@@ -496,14 +473,12 @@
     .contact-card:hover {
       transform: translateY(-5px);
       box-shadow: 0 8px 20px rgba(231, 84, 128, 0.4);
-      /* pink glow hover */
     }
 
     .contact-card i {
       font-size: 30px;
       margin-bottom: 10px;
       color: #e75480;
-      /* pink theme */
     }
 
     .contact-card h3 {
@@ -529,11 +504,15 @@
    a {
     text-decoration: none;
    }
+
+   .hero-img {
+    box-shadow: 0 8px 12px rgb(242, 159, 185),
+    0 0 6px rgb(216, 112, 147)
+   }
   </style>
 </head>
 
 <body>
-  <!-- Navbar -->
   <header>
     <h1>Kunal Halpatrao</h1>
     <nav>
@@ -549,7 +528,6 @@
     </nav>
   </header>
 
-  <!-- Hero -->
   <section id="hero" class="hero">
     <div class="hero-container">
       <img src="Kunal Image-Photoroom.png" alt="Kunal Photo" class="hero-img">
@@ -561,7 +539,6 @@
     </div>
   </section>
 
-  <!-- About -->
   <section id="about" class="about">
     <h2>About Me</h2>
     <p style="text-align:center; max-width:800px; margin:auto; color: #111;">
@@ -571,7 +548,6 @@
     </p>
   </section>
 
-  <!-- Education -->
   <section id="education" class="education">
     <h2>Education</h2>
     <div class="card">
@@ -591,7 +567,6 @@
     </div>
   </section>
 
-  <!-- Experience -->
   <section id="experience">
     <h2>Experience</h2>
     <div class="card">
@@ -619,7 +594,6 @@
     </div>
   </section>
 
-  <!-- Skills -->
   <section id="skills">
     <h2>My Skills</h2>
     <div class="skills-box">
@@ -648,7 +622,6 @@
     </div>
   </section>
 
-  <!-- Projects Section -->
   <section id="projects">
     <h2>My Projects That I've Worked</h2>
     <p style="text-align:center; max-width:800px; margin:auto; color:#444;">
@@ -657,7 +630,6 @@
 
     <div class="projects-container">
 
-      <!-- Project Card 1 -->
       <div class="project-card">
         <img src="image.png" alt="Portfolio Project">
         <h3>Personal Portfolio</h3>
@@ -666,7 +638,6 @@
         <a href="#" class="learn-btn">Learn More →</a>
       </div>
 
-      <!-- Project Card 2 -->
       <div class="project-card">
         <img src="image copy.png" alt="Food App">
         <h3>Food App</h3>
@@ -674,7 +645,6 @@
         <a href="#" class="learn-btn">Learn More →</a>
       </div>
 
-      <!-- Project Card 3 -->
       <div class="project-card">
         <img src="image copy 2.png" alt="Shoose App">
         <h3>Shooes App</h3>
@@ -714,12 +684,10 @@
   </section>
 
 
-  <!-- Footer -->
   <footer>
     <p>Kunal's Portfolio (2025) | Made by Kunal</p>
   </footer>
 
-  <!-- Typed.js -->
   <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
   <script>
     var typed = new Typed('#element', {
@@ -731,4 +699,3 @@
 </body>
 
 </html>
-
